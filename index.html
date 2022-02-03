@@ -63,7 +63,7 @@
 
     <div
       id="carouselExampleCaptions"
-      class="carousel slide"
+      class="carousel slide mt-5"
       data-bs-ride="carousel"
     >
       <div class="carousel-indicators">
@@ -191,12 +191,29 @@
       </button>
     </div>
 
-      <form action="" method="POST">
+    <button class="btn btn-primary my-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Who's Your Favorite?</button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <!-- <h5 id="offcanvasRightLabel">Offcanvas right</h5> -->
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <form action="" method="POST">
+      <label class="my-3" for="favorite-dog">What's your favorite type of dog?</label>
+      <input id="favorite-dog" type="text" required name="favorite-dog" />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+</div>
+
+      <!-- <form action="" method="POST">
         <label for="favorite-dog">What's your favorite type of dog?</label>
         <input id="favorite-dog" type="text" required name="favorite-dog" />
 
         <input type="submit" value="Submit" />
-      </form>
+      </form> -->
       <br />
     </main>
     <footer>
